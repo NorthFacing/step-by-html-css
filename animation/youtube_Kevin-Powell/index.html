@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Animate.css Sandbox</title>
+
+    <style>
+        .container {
+            width: 100vm;
+            height: 100vh;
+        }
+
+        .box {
+            width: 200px;
+            height: 100px;
+            transition-property: all;
+            transition-duration: 2s;
+        }
+
+        .container:hover > .box {
+            /* 这个宽度属性是含有 box 类的属性，也就是说当你选择了这个元素之后，以下定义的属性就作用这这些元素之上 */
+            width: 600px;
+        }
+
+        .one {
+            background: #07BEB8;
+            transition-timing-function: linear;
+        }
+
+        .two {
+            background: #3DCCC7;
+            transition-timing-function: ease-in;
+        }
+
+        .three {
+            background: #9CEAEF;
+            transition-timing-function: ease-out;
+        }
+
+        .four {
+            background: #B1F8F2;
+            transition-timing-function: ease-in-out;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<div class="container">
+    <div class="box one">linear</div>
+    <div class="box two">ease-in</div>
+    <div class="box three">ease-out</div>
+    <div class="box four">ease-in-out</div>
+</div>
+
+</body>
+</html>
