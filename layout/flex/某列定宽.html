@@ -23,16 +23,28 @@
         .three {
             background-color: green;
         }
+
         .two {
             flex: 1
         }
+
         .one, .three {
             flex: 0 0 230px;
         }
     </style>
 </head>
 <body>
+
+<div style="line-height: 30px">
+    <div>flex: 0 0 230px;</div>
+    <div>which means:</div>
+    <div> 0 = don't grow (shorthand for flex-grow)</div>
+    <div> 0 = don't shrink (shorthand for flex-shrink)</div>
+    <div> 230px = start at 230px (shorthand for flex-basis)</div>
+    <a href="https://stackoverflow.com/questions/23794713/how-can-i-have-two-fixed-width-columns-with-one-flexible-column-in-the-center">参考链接</a>
+</div>
 <div class="three-column">
+
     <div class="one">
         固定宽度1
     </div>
