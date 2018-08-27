@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>time line</title>
+
+    <style>
+        .timeline-container {
+            margin: 100px 300px;
+            padding: 0 20px;
+            width: 350px;
+            display: flex;
+            flex-direction: row;
+            align-items: normal;
+            border: solid 1px #00d12d;
+        }
+
+        .time-line {
+            border-right: solid 1px #b2b3b4;
+            margin-left: 20px;
+        }
+
+        .section {
+            display: flex;
+            flex-direction: row;
+            margin: 20px 0;
+        }
+
+        .section-circle {
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            margin-left: -31px;
+            margin-top: 3px;
+            border-radius: 50%;
+            background-color: #b2b3b4;
+            text-align: center;
+            color: white;
+            font-size: 13px;
+            line-height: 19px;
+        }
+
+        .section-content {
+            padding-left: 20px;
+            justify-content: space-between;
+        }
+
+
+
+
+        .angle-wrapper {
+            width: 300px;
+            height: 200px;
+            position: relative;
+            margin: 20px auto;
+            border: 2px solid #cccccc;
+        }
+        .angle-wrapper:before {
+            content: '';
+            width: 0;
+            height: 0;
+            border: 20px solid transparent;
+            transform: translate(0, -50%);
+            border-right-color: #cccccc;
+            position: absolute;
+            right: 100%;
+            top: 50%;
+        }
+        .angle-wrapper:after {
+            content: "";
+            width: 0;
+            height: 0;
+            border: 18px solid transparent;
+            transform: translate(0, -50%);
+            border-right-color: #FFFFFF;
+            position: absolute;
+            right: 100%;
+            top: 50%;
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+
+<div class="angle-wrapper">
+
+</div>
+
+
+
+<div class="timeline-container">
+
+
+    <div class="time-line">
+
+    </div>
+    <div class="section-content">
+        <div class="section">
+            <div class="section-circle">
+                3
+            </div>
+            <div class="section-text">
+                <div>更改时间：2018-07-21</div>
+                <div>更改人：客户</div>
+                <div>更改原因：外出，家里没人</div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="section-circle">
+                2
+            </div>
+            <div class="section-text">
+                <div>更改时间：2018-07-21</div>
+                <div>更改人：安装工</div>
+                <div>更改原因：感冒发烧，已与客户协商更改安装时间</div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="section-circle">
+                1
+            </div>
+            <div class="section-text">
+                <div>首次预约：2018-07-21</div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+</body>
+</html>
