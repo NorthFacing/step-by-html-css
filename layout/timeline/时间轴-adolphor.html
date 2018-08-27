@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test</title>
+    <style>
+
+
+        .modal-content {
+            padding: 30px 30px;
+            overflow-y: scroll;
+        }
+
+        .section {
+            margin: 20px 0;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .section::before {
+            content: '';
+            border: solid 2px #b2b3b4;
+            position: relative;
+            left: 22px;
+            top: 30px;
+        }
+
+        .section:last-child::before {
+            position: static;
+            border-color: white;
+        }
+
+        .section-circle {
+            flex: 0 0 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #b2b3b4;
+            text-align: center;
+            color: white;
+            font-size: 30px;
+            line-height: 40px;
+            z-index: 999;
+        }
+
+        .section-text {
+            margin-left: 30px;
+        }
+
+
+    </style>
+</head>
+<body>
+
+<div class='modal-content'>
+    <div class="section">
+        <div class="section-circle">
+            2
+        </div>
+        <div class="section-text">
+            <div>更改时间：2018-07-21</div>
+            <div>更改人：安装工</div>
+            <div>更改原因：感冒发烧，已与客户协商更改安装时间</div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="section-circle">
+            2
+        </div>
+        <div class="section-text">
+            <div>更改时间：2018-07-21</div>
+            <div>更改人：安装工</div>
+            <div>更改原因：感冒发烧，已与客户协商更改安装时间</div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="section-circle">
+            2
+        </div>
+        <div class="section-text">
+            <div>更改时间：2018-07-21</div>
+            <div>更改人：安装工</div>
+            <div>更改原因：感冒发烧，已与客户协商更改安装时间</div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="section-circle">
+            2
+        </div>
+        <div class="section-text">
+            <div>更改时间：2018-07-21</div>
+            <div>更改人：安装工</div>
+            <div>更改原因：感冒发烧，已与客户协商更改安装时间</div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="section-circle">
+            1
+        </div>
+        <div class="section-text">
+            <div>首次预约：2018-07-21</div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

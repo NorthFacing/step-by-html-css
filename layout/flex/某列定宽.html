@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+        .three-column {
+            width: 100%;
+            height: 500px;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .one {
+            background-color: red;
+        }
+
+        .two {
+            background-color: yellow;
+        }
+
+        .three {
+            background-color: green;
+        }
+        .two {
+            flex: 1
+        }
+        .one, .three {
+            flex: 0 0 230px;
+        }
+    </style>
+</head>
+<body>
+<div class="three-column">
+    <div class="one">
+        固定宽度1
+    </div>
+    <div class="two">
+        自动填充2
+    </div>
+    <div class="three">
+        固定宽度3
+    </div>
+</div>
+</body>
+</html>
